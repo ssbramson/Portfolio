@@ -1,0 +1,354 @@
+/* 
+@media (min-height: 670px) {}
+@media (min-width: 724px) {}
+ */
+
+
+ /* 
+
+*** TABLE OF STYLING CONTENT ***
+--------------------------------
+0. ~Variable Decelerations~
+1. ~Browser Consistency~
+2. ~Global Recurring~
+3. ~Navigation & Footer~
+4. ~Webfont & Typography~
+5. ~Acessibility (a11y)~
+6. ~AVAILABLE FOR UNSEEN~
+7. ~Playground~
+
+ */
+
+
+
+
+
+
+
+
+/*
+VARIABLE DECELERATIONS
+*/
+:root {
+  /* colors */
+  --color-black-rgb:35,34,35;
+  --color-white-rgb:242,243,244;
+  /* --color-primary-rgb:; */
+  /* --color-secondary-rgb:; */
+  /* --color-support-rgb:; */
+  --color-black-hex:#232223;
+  --color-white-hex:#F2F3F4;
+  /* --color-primary-hex:; */
+  /* --color-secondary-hex:; */
+  /* --color-support-hex:; */
+
+  /* font families */
+  --font_family-primary: "Mallanna";
+  --font_family-retro: "Cutive Mono Regular";
+  --font_family-signature: "Rock Salt";
+  --font_family-sans_serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font_family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  /* typography */
+  --font_weight-thin: 200;
+  --font_weight-light: 300;
+  --font_weight-regular: 400;
+  --font_weight-semi_bold: 600;
+  --font_weight-bold: 700;
+  --font_weight-black: 900;
+
+}
+
+/*
+BROWSER CONSISTENCY
+*/
+
+html,
+body,
+noscript,
+div,
+span,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+li,
+b,
+strong,
+sup,
+sup,
+button,
+input,
+hr,
+img,
+article,
+aside,
+footer,
+header,
+main,
+nav,
+section,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+html,
+body,
+noscript,
+div,
+span,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+li,
+b,
+button,
+img,
+input,
+strong,
+sub,
+sup {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input {
+  background: transparent;
+}
+
+article,
+aside,
+footer,
+header,
+main
+nav,
+section {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: var(--font_weight-regular);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+GLOBAL STYLING
+*/
+
+body {
+  background-color: rgba(var(--color-white-rgb), 1.0);
+  color: rgba(var(--color-black-rgb), 1.0);
+  font-family: var(--font_family-primary), var(--font_family-monospace), var(--font_family-sans_serif);
+  font-size: 1.8rem;
+  word-spacing: 0.0rem;
+}
+
+a,
+a:active,
+a:hover,
+a:visited {
+  background-color: transparent;
+  color: inherit;
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+/*
+GLOBAL CONTAINERS
+*/
+
+.global_container-root {
+  display: grid;
+  grid-template: 9.6rem 94fr minmax(1.8rem, 6fr) / minmax(1.8rem, 6fr) 88fr minmax(1.8rem, 6fr);
+  /* grid-template-columns: minmax(1.8rem, 6fr) 88fr minmax(1.8rem, 6fr); */
+  /* grid-template-rows: 9.6rem 94fr mixmax(1.8rem, 6fr); */
+}
+@media (min-height: 670px) {
+  .global_container-root {
+    height: 100vh;
+    max-height: 100vh;
+    min-height: 100vh;
+  }
+}
+
+.page_container-root {
+  display: grid;
+  grid-column: 2 / 3;
+  /* grid-column-end: 3; */
+  /* grid-column-start: 2; */
+  grid-row: 2 / 3;
+  /* grid-row-end: 3; */
+  /* grid-row-start: 2; */
+  grid-template: repeat(10, 10fr) / repeat(10, 10fr);
+  /* grid-template-columns: repeat(10, 10fr); */
+  /* grid-template-rows: repeat(10, 10fr); */
+}
+
+.page_content {
+  grid-column: 1 / 10;
+  grid-row: 1 / 11;
+}
+
+
+
+
+
+
+
+
+/*
+NAVIGATION & FOOTER
+*/
+
+.global_navigation-container {
+  display: grid;
+  grid-column: 1 / 4;
+  /* grid-column-end: 4; */
+  /* grid-column-start: 1; */
+  grid-row: 1 / 2;
+  /* grid-row-end: 2; */
+  /* grid-row-start: 1; */
+  grid-template: 100fr / minmax(1.8rem, 6fr) 88fr minmax(1.8rem, 6fr);
+  /* grid-template-columns: minmax(1.8rem, 6fr) 88fr minmax(1.8rem, 6fr); */
+  /* grid-template-rows: 100fr; */
+}
+
+.global_navigation {
+  align-items: center;
+  display: grid;
+  grid-column: 2 / 3;
+  /* grid-column-end: 3; */
+  /* grid-column-start: 2; */
+  grid-row: 1 / 2;
+  /* grid-row-end: 2; */
+  /* grid-row-start: 1; */
+  /* grid-template: ; */
+  grid-template: 100fr / repeat(2, 50fr);
+  /* grid-template-columns: repeat(2, 50fr); */
+  /* grid-template-rows: inherit; */
+  justify-items: stretch;
+}
+
+.global_navigation-logo {
+  font-size: 2.4rem;
+  line-height: 1.0;
+}
+
+.footer_navigation-container {
+  grid-column: 2 / 3;
+  /* grid-column-end: 3; */
+  /* grid-column-start: 2; */
+  grid-row: 3 / 4;
+  /* grid-row-end: 4; */
+  /* grid-row-start: 3; */
+  justify-self: end;
+  transform: rotate(90deg);
+  transform-origin: top right;
+}
+
+.footer_navigation-container ul,
+.footer_navigation-container li {
+  font-family: var(--font_family-retro);
+  font-size: 1.4rem;
+  line-height: 1.0;
+}
+
+.footer_navigation-container li {
+  display: inline;
+  text-transform: lowercase;
+}
+
+.vertical_bar {
+  margin: 0 1.0rem;
+  /* margin-left: 1.0rem; */
+  /* margin-right: 1.0rem; */
+}
+
+/*
+WEBFONT
+*/
+
+@font-face {
+  font-family: "Mallanna";
+  font-display: swap;
+  src: local("Mallanna-Regular"), url("assets/webfonts/Mallanna-Regular.woff2") format("woff2"), url("assets/webfonts/Mallanna-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  unicode-range: U+0021-007D;
+}
+
+@font-face {
+  font-family: "Cutive Mono Regular";
+  font-display: swap;
+  src: local("CutiveMono-Regular"), url("assets/webfonts/CutiveMono-Regular.woff2") format("woff2"), url("assets/webfonts/CutiveMono-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  unicode-range: U+0021-007D;
+}
+
+/*
+TYPOGRAPHY
+*/
+
+
+
+/*
+ACESSIBILITY (A11Y)
+*/
+
+/* a:focus {} */
+
+.screen_reader_only-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
