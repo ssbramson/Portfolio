@@ -36,12 +36,76 @@
 
     body {
       font-family: var(--font_family-retro);
+      margin-left: 2.4rem;
+      margin-right: 2.4rem;
+    }
+
+    ul {
+      list-style-position: outside;
+      list-style-type: disc;
+      margin-left: 1.8rem;
+    }
+
+    hr {
+      border-color: rgba(var(--color-black-rgb), 0.6);
+      border-style: dashed;
+      margin-left: -2.4rem;
+      margin-right: -2.4rem;
+    }
+
+    .section-title,
+    .section-title-large {
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      margin-bottom: 0.6rem;
+      margin-top: 1.4rem;
+    }
+
+    .section-title-large {
+      font-size: 2.4rem;
+    }
+
+    .resume-format-list {
+      margin-left: 0.0rem;
     }
 
     .resume-format-item {
       display: inline;
+      text-transform: lowercase;
+    }
+
+    .professional-introduction {
+      font-size: 2.0rem;
+    }
+
+    .competencies-list {
+      list-style-position: outside;
+    }
+
+    .position-title {
+      font-size: 2.0rem;
+    }
+
+    .achievement-title {
+      margin-bottom: 0.4rem;
+      margin-top: 0.8rem
+    }
+    .achievement-list {
+      margin-bottom: 2.4rem;
+    }
+
+    footer {
+      margin-bottom: 1.8rem;
+      text-align: center;
     }
     
+    .footer-text {
+      font-size: 75%;
+      text-transform: lowercase;
+    }
+
   </style>
 
   <!-- PREFETCHES -->
@@ -66,15 +130,9 @@
   <div class="">
 
     <div class="">
-      <h1 class="section-title_small"><b>Additional Formats</b></h1>
-      <ul class="resume-formats-list">
-        <li class="resume-format-item"><a href="" class="" role="link" target="_blank">&#46;pdf</a><span class="vertical_bar">&VerticalBar;</span></li>
-        <li class="resume-format-item"><a href="" class="" role="link" target="_blank">&#46;txt</a><span class="vertical_bar">&VerticalBar;</span></li>
-        <li class="resume-format-item"><a href="" class="" role="link" target="_blank">&#46;docx</a><span class="vertical_bar">&VerticalBar;</span></li>
-        <li class="resume-format-item"><a href="" class="" role="link" target="_blank">&#46;md</a><span class="vertical_bar">&VerticalBar;</span></li>
-        <li class="resume-format-item"><a href="" class="" role="link" target="_blank">&#46;zip</a><span class="vertical_bar">&VerticalBar;</span></li>
-        <li class="resume-format-item"><a href="https://www.linkedin.com/in/ssbramson" class="" role="link" target="_blank">LinkedIn</a><span class="vertical_bar">&VerticalBar;</span></li>
-        <li class="resume-format-item"><a href="" class="">Contact Card</a></li>
+      <h1 class="section-title" style="margin-bottom: 0.0rem;"><b>Additional Formats:</b></h1>
+      <ul class="resume-format-list">
+        <li class="resume-format-item"><a href="Spencer_Bramson-Resume_Q1_2019.pdf" class="resume-format-link" rel="noopener noreferrer" role="link" target="_blank">&#46;pdf</a><span class="vertical_bar">&VerticalLine;</span></li><li class="resume-format-item"><a href="Spencer_Bramson-Resume_Q1_2019.txt" class="resume-format-link" rel="noopener noreferrer" role="link" target="_blank">&#46;txt</a><span class="vertical_bar">&VerticalLine;</span></li><li class="resume-format-item"><a href="Spencer_Bramson-Resume_Q1_2019.docx" class="resume-format-link" rel="noopener noreferrer" role="link" target="_blank">&#46;docx</a><span class="vertical_bar">&VerticalLine;</span></li><li class="resume-format-item"><a href="https://github.com/ssbramson/Portfolio/blob/master/resume/Spencer_Bramson-Resume_Q1_2019.md" class="resume-format-link" rel="noopener noreferrer" role="link" target="_blank">&#46;md</a><span class="vertical_bar">&VerticalLine;</span></li><li class="resume-format-item"><a href="Spencer_Bramson-Q1_2019.zip" class="resume-format-link" rel="noopener noreferrer" role="link" target="_blank">&#46;zip</a><span class="vertical_bar">&VerticalLine;</span></li><li class="resume-format-item"><a href="https://www.linkedin.com/in/ssbramson" class="resume-format-link" role="link" target="_blank">LinkedIn</a><span class="vertical_bar">&VerticalLine;</span></li><li class="resume-format-item"><a href="../Spencer_Bramson-contact_card.vcf" class="resume-format-link" rel="noopener noreferrer" role="link" target="_blank">Contact Card</a></li>
       </ul>
     </div>
 
@@ -85,8 +143,8 @@
       <div class="">
 
         <div class="">
-          <h1 class="">Spencer Bramson</h1>
-          <h2 class="">Senior B2C Specialist</h2>
+          <h1 class=""><b>Spencer Bramson</b></h1>
+          <h2 class=""><em>Senior B2C Specialist</em></h2>
         </div>
 
         <div class="">
@@ -111,43 +169,37 @@
 
       <div class="">
 
-        <div class="">
-          <div class="">Award-winning product innovator specialized in consumer technologies and packaged goods. Past clientele includes Milky Way, Kendrick Lamar, Spotify, Google, Blackberry, Procter & Gamble, Thomson Reuters, Playtex Tampons, and Ford Motors.</div>
-        </div>
+        <p class="professional-introduction">Award-winning product innovator specialized in consumer technologies and packaged goods. Past clientele includes Milky Way, Kendrick Lamar, Spotify, Google, Blackberry, Procter & Gamble, Thomson Reuters, Playtex Tampons, and Ford Motors.</p>
+
+        <h1 class="section-title"><b>Core Competencies</b></h1>
 
         <div class="">
-
-          <div class=""><b>Core Competencies</b></div>
 
           <div class="">
+            <ul class="competencies-list">
+              <li class="competencies-item">Data-Driven Decision Making</li>
+              <li class="competencies-item">Client Acquisition &amp; Retention</li>
+              <li class="competencies-item">Data Gathering &amp; Analysis</li>
+              <li class="competencies-item">Market Positioning &amp; Growth</li>
+            </ul>
+          </div>
 
-            <div class="">
-              <ul class="">
-                <li class="">Data-Driven Decision Making</li>
-                <li class="">Client Acquisition &amp; Retention</li>
-                <li class="">Data Gathering &amp; Analysis</li>
-                <li class="">Market Positioning &amp; Growth</li>
-              </ul>
-            </div>
+          <div class="">
+            <ul class="competencies-list">
+              <li class="competencies-item">Key Partnership Development</li>
+              <li class="competencies-item">Corporate Branding &amp; Messaging</li>
+              <li class="competencies-item">Product &amp; Project Management</li>
+              <li class="competencies-item">Internal Recruitment &amp; Retention</li>
+            </ul>
+          </div>
 
-            <div class="">
-              <ul class="">
-                <li class="">Key Partnership Development</li>
-                <li class="">Corporate Branding &amp; Messaging</li>
-                <li class="">Product &amp; Project Management</li>
-                <li class="">Internal Recruitment &amp; Retention</li>
-              </ul>
-            </div>
-
-            <div class="">
-              <ul class="">
-                <li class="">Product &amp; Feature Launch Planning</li>
-                <li class="">Contingency &amp; Crisis Planning</li>
-                <li class="">Risk Assessment &amp; Impact Planning</li>
-                <li class="">Product Budgeting &amp; Forecasting</li>
-              </ul>
-            </div>
-
+          <div class="">
+            <ul class="competencies-list">
+              <li class="competencies-item">Product &amp; Feature Launch Planning</li>
+              <li class="competencies-item">Contingency &amp; Crisis Planning</li>
+              <li class="competencies-item">Risk Assessment &amp; Impact Planning</li>
+              <li class="competencies-item">Product Budgeting &amp; Forecasting</li>
+            </ul>
           </div>
 
         </div>
@@ -158,32 +210,50 @@
 
       <div class="">
 
-        <div class=""><b>Professional Experience</b></div>
+        <h1 class="section-title-large"><b>Professional Experience</b></h1>
 
         <div class="">
 
           <div class="">
             <div class="">
-              <div class="">Consumer Technology Product Specialist</div>
-              <div class="">June 2015 &dash; January 2019</div>
+              <h2 class="position-title"><b>Consumer Technology Product Specialist</b></h2>
+              <div class="position-date"><em>June 2015 &dash; January 2019</em></div>
             </div>
             <div class="">
-              <div class="">&lt;&#47;ssbramson&gt;</div>
-              <div class="">California</div>
+              <h3 class="company-title">&lt;&#47;ssbramson&gt;</h3>
+              <div class="company-location">California</div>
             </div>
-            <div class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero error voluptatem voluptate aliquid dicta! Similique natus architecto magnam consequatur nesciunt quaerat ab, earum id reprehenderit doloribus nobis rerum a accusamus.</div>
+            <p class="position-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero error voluptatem voluptate aliquid dicta! Similique natus architecto magnam consequatur nesciunt quaerat ab, earum id reprehenderit doloribus nobis rerum a accusamus.</p>
           </div>
 
+          <h3 class="achievement-title"><b>Key Achievements</b></h3>
+          <ul class="achievement-list">
+            <li class="achievement-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit numquam dolores ad praesentium maxime! Cumque, veritatis sequi explicabo dignissimos minima aspernatur voluptatum. Cumque nostrum qui doloremque ab voluptate illum iusto.</li>
+            <li class="achievement-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit numquam dolores ad praesentium maxime! Cumque, veritatis sequi explicabo dignissimos minima aspernatur voluptatum. Cumque nostrum qui doloremque ab voluptate illum iusto.</li>
+            <li class="achievement-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit numquam dolores ad praesentium maxime! Cumque, veritatis sequi explicabo dignissimos minima aspernatur voluptatum. Cumque nostrum qui doloremque ab voluptate illum iusto.</li>
+          </ul>
+        </div>
+
+        <div class="">
+
           <div class="">
-            <div class=""><b>Key Achievements</b></div>
             <div class="">
-              <ul class="">
-                <li class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit numquam dolores ad praesentium maxime! Cumque, veritatis sequi explicabo dignissimos minima aspernatur voluptatum. Cumque nostrum qui doloremque ab voluptate illum iusto.</li>
-                <li class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit numquam dolores ad praesentium maxime! Cumque, veritatis sequi explicabo dignissimos minima aspernatur voluptatum. Cumque nostrum qui doloremque ab voluptate illum iusto.</li>
-                <li class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit numquam dolores ad praesentium maxime! Cumque, veritatis sequi explicabo dignissimos minima aspernatur voluptatum. Cumque nostrum qui doloremque ab voluptate illum iusto.</li>
-              </ul>
+              <h2 class="position-title"><b>Marketing and Revenue Officer</b></h2>
+              <div class="position-date"><em>September 2011 &dash; April 2015</em></div>
             </div>
+            <div class="">
+              <h3 class="company-title">influencers&#64;</h3>
+              <div class="company-location">Boston, MA</div>
+            </div>
+            <p class="position-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero error voluptatem voluptate aliquid dicta! Similique natus architecto magnam consequatur nesciunt quaerat ab, earum id reprehenderit doloribus nobis rerum a accusamus.</p>
           </div>
+
+          <h3 class="achievement-title"><b>Key Achievements</b></h3>
+          <ul class="achievement-list">
+            <li class="achievement-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit numquam dolores ad praesentium maxime! Cumque, veritatis sequi explicabo dignissimos minima aspernatur voluptatum. Cumque nostrum qui doloremque ab voluptate illum iusto.</li>
+            <li class="achievement-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit numquam dolores ad praesentium maxime! Cumque, veritatis sequi explicabo dignissimos minima aspernatur voluptatum. Cumque nostrum qui doloremque ab voluptate illum iusto.</li>
+            <li class="achievement-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit numquam dolores ad praesentium maxime! Cumque, veritatis sequi explicabo dignissimos minima aspernatur voluptatum. Cumque nostrum qui doloremque ab voluptate illum iusto.</li>
+          </ul>
 
         </div>
 
@@ -191,26 +261,22 @@
 
           <div class="">
             <div class="">
-              <div class="">Marketing and Revenue Officer</div>
-              <div class="">September 2011 &dash; April 2015</div>
+              <h2 class="position-title"><b>Data and Experience Officer</b></h2>
+              <div class="position-date"><em>September 2012 &dash; April 2015</em></div>
             </div>
             <div class="">
-              <div class="">influencers&#64;</div>
-              <div class="">Boston, MA</div>
+              <h3 class="company-title">ChatterMob</h3>
+              <div class="company-location">Boston, MA</div>
             </div>
-            <div class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero error voluptatem voluptate aliquid dicta! Similique natus architecto magnam consequatur nesciunt quaerat ab, earum id reprehenderit doloribus nobis rerum a accusamus.</div>
+            <p class="position-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero error voluptatem voluptate aliquid dicta! Similique natus architecto magnam consequatur nesciunt quaerat ab, earum id reprehenderit doloribus nobis rerum a accusamus.</p>
           </div>
 
-          <div class="">
-            <div class=""><b>Key Achievements</b></div>
-            <div class="">
-              <ul class="">
-                <li class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit numquam dolores ad praesentium maxime! Cumque, veritatis sequi explicabo dignissimos minima aspernatur voluptatum. Cumque nostrum qui doloremque ab voluptate illum iusto.</li>
-                <li class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit numquam dolores ad praesentium maxime! Cumque, veritatis sequi explicabo dignissimos minima aspernatur voluptatum. Cumque nostrum qui doloremque ab voluptate illum iusto.</li>
-                <li class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit numquam dolores ad praesentium maxime! Cumque, veritatis sequi explicabo dignissimos minima aspernatur voluptatum. Cumque nostrum qui doloremque ab voluptate illum iusto.</li>
-              </ul>
-            </div>
-          </div>
+          <h3 class="achievement-title"><b>Key Achievements</b></h3>
+          <ul class="achievement-list">
+            <li class="achievement-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit numquam dolores ad praesentium maxime! Cumque, veritatis sequi explicabo dignissimos minima aspernatur voluptatum. Cumque nostrum qui doloremque ab voluptate illum iusto.</li>
+            <li class="achievement-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit numquam dolores ad praesentium maxime! Cumque, veritatis sequi explicabo dignissimos minima aspernatur voluptatum. Cumque nostrum qui doloremque ab voluptate illum iusto.</li>
+            <li class="achievement-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit numquam dolores ad praesentium maxime! Cumque, veritatis sequi explicabo dignissimos minima aspernatur voluptatum. Cumque nostrum qui doloremque ab voluptate illum iusto.</li>
+          </ul>
 
         </div>
 
@@ -218,53 +284,22 @@
 
           <div class="">
             <div class="">
-              <div class="">Data and Experience Officer</div>
-              <div class="">September 2012 &dash; April 2015</div>
+              <h2 class="position-title"><b>Operations Officer</b></h2>
+              <div class="position-date"><em>May 2009 &dash; July 2011</em></div>              
             </div>
             <div class="">
-              <div class="">ChatterMob</div>
-              <div class="">Boston, MA</div>
+              <h3 class="company-title">Buzz U.</h3>
+              <div class="company-location">Boston, MA</div>
             </div>
-            <div class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero error voluptatem voluptate aliquid dicta! Similique natus architecto magnam consequatur nesciunt quaerat ab, earum id reprehenderit doloribus nobis rerum a accusamus.</div>
+            <p class="position-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero error voluptatem voluptate aliquid dicta! Similique natus architecto magnam consequatur nesciunt quaerat ab, earum id reprehenderit doloribus nobis rerum a accusamus.</p>
           </div>
 
-          <div class="">
-            <div class=""><b>Key Achievements</b></div>
-            <div class="">
-              <ul class="">
-                <li class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit numquam dolores ad praesentium maxime! Cumque, veritatis sequi explicabo dignissimos minima aspernatur voluptatum. Cumque nostrum qui doloremque ab voluptate illum iusto.</li>
-                <li class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit numquam dolores ad praesentium maxime! Cumque, veritatis sequi explicabo dignissimos minima aspernatur voluptatum. Cumque nostrum qui doloremque ab voluptate illum iusto.</li>
-                <li class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit numquam dolores ad praesentium maxime! Cumque, veritatis sequi explicabo dignissimos minima aspernatur voluptatum. Cumque nostrum qui doloremque ab voluptate illum iusto.</li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="">
-
-          <div class="">
-            <div class="">
-              <div class="">Operations Officer</div>
-              <div class="">May 2009 &dash; July 2011</div>
-            </div>
-            <div class="">
-              <div class="">Buzz U.</div>
-              <div class="">Boston, MA</div>
-            </div>
-            <div class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero error voluptatem voluptate aliquid dicta! Similique natus architecto magnam consequatur nesciunt quaerat ab, earum id reprehenderit doloribus nobis rerum a accusamus.</div>
-          </div>
-
-          <div class="">
-            <div class=""><b>Key Achievements</b></div>
-            <div class="">
-              <ul class="">
-                <li class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit numquam dolores ad praesentium maxime! Cumque, veritatis sequi explicabo dignissimos minima aspernatur voluptatum. Cumque nostrum qui doloremque ab voluptate illum iusto.</li>
-                <li class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit numquam dolores ad praesentium maxime! Cumque, veritatis sequi explicabo dignissimos minima aspernatur voluptatum. Cumque nostrum qui doloremque ab voluptate illum iusto.</li>
-                <li class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit numquam dolores ad praesentium maxime! Cumque, veritatis sequi explicabo dignissimos minima aspernatur voluptatum. Cumque nostrum qui doloremque ab voluptate illum iusto.</li>
-              </ul>
-            </div>
-          </div>
+          <h3 class="achievement-title"><b>Key Achievements</b></h3>
+          <ul class="achievement-list">
+            <li class="achievement-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit numquam dolores ad praesentium maxime! Cumque, veritatis sequi explicabo dignissimos minima aspernatur voluptatum. Cumque nostrum qui doloremque ab voluptate illum iusto.</li>
+            <li class="achievement-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit numquam dolores ad praesentium maxime! Cumque, veritatis sequi explicabo dignissimos minima aspernatur voluptatum. Cumque nostrum qui doloremque ab voluptate illum iusto.</li>
+            <li class="achievement-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit numquam dolores ad praesentium maxime! Cumque, veritatis sequi explicabo dignissimos minima aspernatur voluptatum. Cumque nostrum qui doloremque ab voluptate illum iusto.</li>
+          </ul>
 
         </div>
 
@@ -274,30 +309,27 @@
       
       <div class="">
 
-        <div class="">
-          <div class=""><b>Professional Certifications</b></div>
-          <ul class="">
-            <li class="">Inbound Marketing &#40;<em>HubSpot</em>&#41;</li>
-            <li class="">Frontend Web Development, Nanodegree &#40;<em>Google in partnership with Udacity</em>&#41;</li>
-            <li class="">[BLAHHHHH]Social Media Customer Management &amp; Care  &#40;<em>Word of Mouth Marketing Association</em>&#41;</li>
-            <li class="">[BLAHHHHH]Word of Mouth &amp; Social Media Management &#40;<em>Word of Mouth Marketing Association</em>&#41;</li>
-            <li class="">[BLAHHHHH]Inbound Marketing &#40;<em>Word of Mouth Marketing Association</em>&#41;</li>
-            <li class="">Scrum Product Owner &#40;<em>Scrum Training Institute</em>&#41;</li>
-            <li class="">Scrum Master &#40;<em>Scrum Training Institute</em>&#41;</li>
-            <li class="">Equities &#40;<em>Bloomberg</em>&#41;</li>
-          </ul>
-        </div>
-
-        <div class="">
-          <div class=""><b>Awards &amp; Acknowledgements</b></div>
-          <ul class="">
-            <li class="">Rising Business Start &#40;<em>Boston Business Journal</em>&#41;</li>
-            <li class="">Future Leaders under 30 Group &#40;<em>Massachusetts Innovation &amp; Technology Exchange</em>&#41;</li>
-            <li class="">MITX All-Star Award &#40;<em>Massachusetts Innovation &amp; Technology Exchange</em>&#41;</li>
-            <li class="">Most Likeable Entrepreneur &#40;<em>Likeable Media</em>&#41;</li>
-            <li class="">Future Forward Award &#40;<em>Future Forward Association</em>&#41;</li>
-          </ul>
-        </div>
+        <h1 class="section-title"><b>Professional Certifications</b></h1>
+        <ul class="">
+          <li class="">Inbound Marketing &#40;<em>HubSpot</em>&#41;</li>
+          <li class="">Frontend Web Development, Nanodegree &#40;<em>Google in partnership with Udacity</em>&#41;</li>
+          <li class="">[BLAHHHHH]Social Media Customer Management &amp; Care  &#40;<em>Word of Mouth Marketing Association</em>&#41;</li>
+          <li class="">[BLAHHHHH]Word of Mouth &amp; Social Media Management &#40;<em>Word of Mouth Marketing Association</em>&#41;</li>
+          <li class="">[BLAHHHHH]Inbound Marketing &#40;<em>Word of Mouth Marketing Association</em>&#41;</li>
+          <li class="">Scrum Product Owner &#40;<em>Scrum Training Institute</em>&#41;</li>
+          <li class="">Scrum Master &#40;<em>Scrum Training Institute</em>&#41;</li>
+          <li class="">Equities &#40;<em>Bloomberg</em>&#41;</li>
+        </ul>
+        
+        <h1 class="section-title"><b>Awards &amp; Acknowledgements</b></h1>
+        <ul class="">
+          <li class="">Rising Business Start &#40;<em>Boston Business Journal</em>&#41;</li>
+          <li class="">Future Leaders under 30 Group &#40;<em>Massachusetts Innovation &amp; Technology Exchange</em>&#41;</li>
+          <li class="">MITX All-Star Award &#40;<em>Massachusetts Innovation &amp; Technology Exchange</em>&#41;</li>
+          <li class="">Most Likeable Entrepreneur &#40;<em>Likeable Media</em>&#41;</li>
+          <li class="">Future Forward Award &#40;<em>Future Forward Association</em>&#41;</li>
+        </ul>
+        
 
       </div>
 
@@ -305,12 +337,10 @@
 
     <hr class="">
     
-    <div class="">
-      <div class="">
-        <a href="https://www.ssbramson.com" class="" role="link" target="_blank">www.ssbramson.com</a>
-      </div>
-      <div class="">Designed &amp; built in CA</div>
-    </div>
+    <footer class="">
+      <a href="https://www.ssbramson.com" class="" rel="noopener noreferrer" role="link" target="_blank">www.ssbramson.com</a>
+      <div class="footer-text">Designed &amp; built in CA</div>
+    </footer>
   
   </div>
 
