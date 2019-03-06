@@ -1,7 +1,7 @@
 **additional formats**: [link](#) | [link](#) | [link](#) | [link](#) | [link](#)
 ***
 ### Spencer Bramson 
-+1 847.767.6191 | [email](iam@ssbramson.com) | [portfolio](https://www.ssbramson.com) | [linkedin](https://www.linkedin.com/in/ssbramson) | San Francisco, CA 94110
++1 847.767.6191 | [email](iam@ssbramson.com) | [portfolio](https://www.ssbramson.com) | [linkedin](https://www.linkedin.com/in/ssbramson) | [contact card](https://www.ssbramson.com/Spencer_Bramson-contact_card.vcf)
 ***
 #### Senior B2C Specialist
 Award-winning product innovator specialized in consumer technologies and packaged goods. Past clientele includes Milky Way, Kendrick Lamar, Spotify, Google, Blackberry, Procter & Gamble, Thomson Reuters, Playtex Tampons, and Ford Motors.
@@ -14,14 +14,13 @@ Market Positioning & Growth | Internal Recruitment & Retention | Product Budgeti
 ### PROFESSIONAL EXPERIENCE
 
 #### Consumer Technology Product Specialist | *&lt;&#47;ssbramson&gt;*
+###### *June 2015 &dash; January 2019* | *California*
 
 Management consulting firm focused on implementing and executing custom-tailored initiatives for high-growth consumer technology organizations, working with C-Suite executives, upper management, and investors.
 
 **Key Achievements**
 * Restructured, implemented, and trained client's operations, marketing, technology, and administrative departments to increase overall corporate efficiency and KPI tracking using applications including HubSpot, Zendesk, Intercom, Zapier, Slack, Lucky Orange, Twilio, Jira, Aha-io, Slack, Zapier, StatusPage, Pingdom, Klipfolio, MailChimp, among many others.
 * Managed the day-to-day of the client's consumer-facing departments, creating and executing marketing initiatives and trade show experiences and vetting and securing service providers, user interface, and customer relationship management systems.
-
-###### *June 2015 &dash; January 2019* | *California*
 
 #### Marketing &amp; Revenue Officer [at] *influencers&#64;*
 
